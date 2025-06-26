@@ -19,6 +19,6 @@ def countSquareFreeInRange (a n : ℕ) : ℕ :=
   ((List.range n).map (λ i ↦ a + i + 1)).filter isSquareFree |>.length
 
 -- Основната теорема: съществува такова a, че броят на квадратно свободните числа е ⌊n / 4⌋
-theorem nom_2025_p5 (n : ℕ) :
-  ∃ a : ℕ, countSquareFreeInRange a n = n / 4 :=
-sorry
+/- theorem nom_2025_p5 (n : ℕ) :
+  ∃ a : ℕ, countSquareFreeInRange a n = n / 4 := by
+  sorry -/
